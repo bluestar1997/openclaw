@@ -83,6 +83,7 @@ export function evaluateMissingDeviceIdentity(params: {
     return { kind: "allow" };
   }
   if (params.isControlUi && !params.controlUiAuthPolicy.allowBypass) {
+    //zqr
     // Allow localhost Control UI connections when allowInsecureAuth is configured.
     // Localhost has no network interception risk, and browser SubtleCrypto
     // (needed for device identity) is unavailable in insecure HTTP contexts.
